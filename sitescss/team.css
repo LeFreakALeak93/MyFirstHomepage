@@ -1,0 +1,12 @@
+#content{
+  height:auto;
+  font-family:Arial,sans-serif;
+  font-weight:700;
+  font-size:17px;
+}
+
+iframe{
+  background-color:#EDE8E2;
+  box-shadow:0 2px 5px rgba(0,0,0,0.3);
+}
+

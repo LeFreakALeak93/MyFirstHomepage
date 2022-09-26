@@ -1,0 +1,19 @@
+a {
+	text-decoration:none;
+	outline:none;
+}
+body {
+	background-color:#CCCCCC;
+}
+
+#form {
+ width: 700px;
+}
+#form p {
+	min-height:35px;
+}
+#form label {
+ width: 250px;
+ display:block;
+ float:left;
+}

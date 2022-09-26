@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Start</title>
+    <meta charset="utf-8"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+  	<script>
+			function bannerwerbung(){
+				var zufall = Math.floor(Math.random()*3)+1; 
+				document.getElementById("bilder").src= "images/banner/bild" + zufall + ".jpg"; 		
+			}
+			
+			function wechsel(){
+				setInterval("bannerwerbung()", 5000); 	
+			}
+			
+			wechsel(); 			
+	</script>
+  
+    <header>
+		<img src="images/banner/bild1.jpg" id="bilder" alt="bannerwechsel" title="bannerbild"/>
+		<hgroup>
+			<h2>Meyer Immobilien GmbH</h2>
+			<h4>Telefon: +49 (0) 30 - 755 68 32</h4>
+			<h4>E-Mail: info@meyer-immobilien-gmbh.de</h4>
+		</hgroup>
+	</header>
+		<div id="navigation">
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="sites/immobilien.html">Immobilien</a></li>
+            <li><a href="sites/team.html">Über uns</a>
+				<ul>
+					<li><a href="sites/team.html">Unser Team</a></li>
+					<li><a href="sites/team.html">Anfahrt</a></li>
+				</ul>
+			</li>
+            <li><a href="sites/anfragen.html">Anfragen</a></li>
+            <li><a href="sites/contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+      <section>
+	  <div>
+		<img src="images/haus1_start_bearbeitet.jpg" alt="Innenarchitektur Haus" title="Innenarchitektur Haus"/>
+	  </div>
+	  <div>
+		<p><span><h1>Herzlich Willkommen auf unserer Seite!</h1></span>
+		<br/>Wir verfügen über eine Vielzahl an Immobilien in und
+		<br/>um Berlin. Schauen Sie sich ruhig um. Es gibt 		<br/>einiges zu entdecken. Sicherlich ist für Sie auch <br/>etwas dabei. Egal, ob <span class="paragraph" title="Anzahl Zimmer">Eigentumswohnungen, Appartements oder Eigenheime,</span> 
+		<br/>wir helfen Ihnen, in Berlin sesshaft zu werden.
+		<br/>Bitte nennen Sie uns dazu Ihr Budget und Ihre Wünsche, 
+		<br/>sodass wir mit Ihnen gemeinsam eine passende Immobilie 
+		<br/>und das entsprechende Finanzierungskonzept hierzu finden und erstellen können.  
+		<br/>Gerne können Sie sich vorab dazu auf Immobilienscout24 bzw. den gängigen Immobilienportalen informieren.
+		</p>
+		<blockquote>
+          Link:<a href="https://www.immobilienscout24.de/" target="_blank">Immobilienscout24: Angebote</a>      
+        </blockquote>
+	  </div>
+      </section>
+	<div class="clearfix"></div>
+ 	<footer>
+		<div>
+			<p><a href="sites/impressum.html">Impressum</a> | <a href="sites/contact.html">Kontakt</a> | <a href="#head"> >>> nach oben </a></p>
+		</div>
+		<div>
+			<a href="https://de-de.facebook.com/" target="_blank"><img src="icon/icon-facebook.png" alt="facebook startsite" title="icon1"/></a>
+			<a href="https://www.google.de/?h1=de" target="_blank"><img src="icon/icon-google-plus.png" alt="google startsite" title="icon2"/></a>
+			<a href="https://twitter.com" target="_blank"><img src="icon/icon-twitter.png" alt="twitter startsite" title="icon3"/></a>  
+		</div>
+	</footer>
+  </body>
+</html>

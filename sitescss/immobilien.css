@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  width:100%;
+  height:auto;
+  padding:3em;
+  background-color: rgb(246,248,249); 
+  background-image: -moz-linear-gradient(top, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+}
+body{
+	width:85%;
+	height:auto;
+	margin:1% auto;
+	padding:2em;
+}
+
+#content {
+  width: 900px;
+  margin:1% auto;
+  /* padding:3em; */
+  background-color:#CCCCCC;
+  box-shadow:inset -2px 2px 8px #000000;
+ }
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.column img{
+	width:250px;
+	height:250px;
+	
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+	left:0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+ /*  background-color: rgba(0, 0, 0, 0.8); */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size:16px;
+  font-weight:700;
+  padding: 8px 12px;
+  background-color:black;
+  position: absolute;
+  top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  height:auto;
+}
+
+.column img{
+	width:100%;
+	height:150px;
+	
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+footer{
+	width:100%;
+	height:6em;
+}
+
+
+

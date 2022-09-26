@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery | Formular mit Ajax</title>
+
+
+<link type="text/css" href="styles.css" rel="stylesheet" />	
+
+<!-- Fuer Datepicker: Styles -->
+<link type="text/css" href="../lib/jquery-ui-1.10.3.custom/css/ui-darkness/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+
+<script type="text/javascript" src="../lib/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+<!-- Fuer Datepicker: Sprachdateien -->
+<script type="text/javascript" src="../lib/jquery-ui-1.10.3.custom/i18n/jquery.ui.datepicker-de.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui-1.10.3.custom/i18n/jquery.ui.datepicker-fr.js"></script>
+
+<script type="text/javascript" src="../lib/form/jquery.form.js"></script>
+<script type="text/javascript" src="../lib/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="../lib/validate/localization/messages_de.js"></script>
+
+<script type="text/javascript" src="scripts.js"></script>
+
+</head>
+<body>
+
+<div id="msg">Bitte füllen Sie das Formular aus.</div>
+
+
+<form id="form" method="post" action="http://localhost/ajaxform/php/Listing-5-74.php">
+	<fieldset>
+		<legend>Formular mit Validierung</legend>
+		<p>
+			<label for="vorname">Vorname* </label>
+			<input id="vorname" name="vorname" />
+		</p>
+		<p>
+			<label for="name">Name* (mindestens 2 Zeichen)</label>
+			<input id="name" name="name" />
+		</p>
+		<p>
+			<label for="email">E-Mail*</label>
+			<input id="email" name="email" />
+		</p>
+    <!-- Fuer Datepicker: Sprachwahl -->
+    <p>
+      <label for="lang">Sprache</label>
+      <select id="lang">
+        <option value="">Default</option>
+        <option value="fr">French (Français)</option>
+        <option value="de" selected="selected">German (Deutsch)</option>
+      </select>
+    </p>
+    
+		<p>
+			<label for="date">Wunschdatum</label>
+			<input id="date" name="date" value="" />
+		</p>
+		<p>
+			<label for="message">Mitteilung*</label>
+			<textarea id="message" name="message"></textarea>
+		</p>
+		<p>
+			<input class="submit" type="submit" value="Submit"/>
+		</p>
+	</fieldset>
+</form>
+<p>* Pflichtfelder</p> 
+
+
+<div id="log"></div>
+</body>
+</html>

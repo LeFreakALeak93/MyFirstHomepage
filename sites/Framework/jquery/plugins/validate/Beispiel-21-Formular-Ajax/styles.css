@@ -1,0 +1,46 @@
+* {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+a {
+	text-decoration:none;
+	outline:none;
+}
+body {
+	background-color:#dddddd;
+}
+
+
+#form {
+ width: 500px;
+}
+#form p {
+	min-height:35px;
+}
+#form label {
+ width: 200px;
+ display:block;
+ float:left;
+
+}
+#form label.error {
+ margin-left: 200px;
+ padding:5px 5px 5px 0; 
+ color:#CC0000;
+}
+
+
+#newsletter_themen label.error {
+	display: none;
+	width:350px;
+	margin-left: 10px;
+}
+
+#log,
+#msg {
+	width:470px;
+	padding:10px 10px 10px 15px;
+	margin:0 0 10px 3px;
+	background-color:#EEEEEE;
+}
